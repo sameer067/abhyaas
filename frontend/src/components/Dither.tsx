@@ -147,19 +147,19 @@ class RetroEffectImpl extends Effect {
     }
 
     set colorNum(v: number) {
-        this.uniforms.get('colorNum').value = v;
+        this.uniforms.get('colorNum')!.value = v;
     }
 
     get colorNum() {
-        return this.uniforms.get('colorNum').value;
+        return this.uniforms.get('colorNum')!.value;
     }
 
     set pixelSize(v: number) {
-        this.uniforms.get('pixelSize').value = v;
+        this.uniforms.get('pixelSize')!.value = v;
     }
 
     get pixelSize() {
-        return this.uniforms.get('pixelSize').value;
+        return this.uniforms.get('pixelSize')!.value;
     }
 }
 
