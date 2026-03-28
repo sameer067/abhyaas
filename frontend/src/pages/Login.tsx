@@ -42,7 +42,7 @@ export default function Login() {
           waveColor={[0.55, 0.2, 0.85]}
           disableAnimation={false}
           enableMouseInteraction={true}
-          mouseRadius={0.3}
+          mouseRadius={0.2}
           colorNum={4}
           waveAmplitude={0.3}
           waveFrequency={3}

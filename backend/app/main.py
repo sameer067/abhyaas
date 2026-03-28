@@ -34,7 +34,12 @@ app = FastAPI(title="Abhyaas — Coach Compliance Tracker", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[settings.FRONTEND_URL, "http://localhost:5173", "http://localhost:4173"],
+    allow_origins=[
+        settings.FRONTEND_URL,
+        "https://abhyaas-chi.vercel.app",
+        "http://localhost:5173",
+        "http://localhost:4173",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
